@@ -1,11 +1,29 @@
+@font-face {
+    font-family: heading-font;
+    src: url(Crackman.otf);
+}
+@font-face {
+    font-family: bottom-text-font;
+    src: url(zorque.otf);
+}
+.restOfThePage{
+    text-align: center;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(204, 188, 219);
+    background-image: url(./images/tttbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .tic-tac-toe-heading-text{
     font-size: 5rem;
-    margin-top: 5vh;
+    font-family: heading-font;
+    color: rgb(87, 73, 121);
+    opacity: 1;
+    
     
 
     
@@ -13,26 +31,33 @@ body{
 }
 .score{
     background-color: rgb(227, 158, 158);
+    justify-self: center;
+    display: inline-block;
 }
 
 
 .header{
-    background-color: rgb(211, 237, 182);
-    height: 30vh;
+    background-color: rgb(220, 242, 192);
+    height: 26vh;
     text-align: center;
+    padding-top: 11vh;
+    opacity: 0.95;
     
 }
 
 .gameContainer{
 
-    background-color: aqua;
+    background-color: rgb(227, 242, 197);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: 1px solid black;
     justify-items: center;
-    width: 50%;
+    width: 40%;
     justify-content: center;
+    margin-top: 30vh;
+    justify-content: center;
+    border-radius: 6px;
     
 
 }
@@ -40,11 +65,20 @@ body{
        
     border: 1px dotted black;
     width: 100%;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    font-size: 5rem;
+    
     
 }
 .lowerMostText{
     position: fixed;
     top: 96dvh;
     left: 40dvw;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 6px;
+    font-family: bottom-text-font;
+    opacity: 0.7;
     
 }
