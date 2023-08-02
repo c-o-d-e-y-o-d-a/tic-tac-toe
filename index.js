@@ -32,6 +32,7 @@ for(let i=0;i<elem.length;i++){
             elem[i].innerText='X';
             player=2;
             console.log('X');
+            // add a function here to check if at certainindexes the elements are same or not (to finish the game)
             
             
         }
