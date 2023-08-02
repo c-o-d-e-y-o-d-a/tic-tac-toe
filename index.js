@@ -1,17 +1,46 @@
-const gridElement0 = document.getElementById('cell0');
-const gridElement1 = document.getElementById('cell1');
-const gridElement2 = document.getElementById('cell2');
-const gridElement3 = document.getElementById('cell3');
-const gridElement4 = document.getElementById('cell4');
-const gridElement5 = document.getElementById('cell5');
-const gridElement6 = document.getElementById('cell6');
-const gridElement7 = document.getElementById('cell7');
-
 const cell = (domIndex)=>{
-    let content = ' ';
-    const changeContent = ()=>document.getElementById(domIndex).innerText=content;
-    return {domIndex,changeContent};
 
+    
+    const changeContent = (newContent)=>document.getElementById(domIndex).innerText=newContent;
+    return {domIndex,changeContent,};
+
+}
+
+//making objects of each cell
+
+
+const gameBoardObject =()=>{
+    const gridElement0 = cell("cell0");
+    const gridElement1 = cell("cell1");
+    const gridElement2 = cell("cell2");
+    const gridElement3 = cell("cell3");
+    const gridElement4 = cell("cell4");
+    const gridElement5 = cell("cell5");
+    const gridElement6 = cell("cell6");
+    const gridElement7 = cell("cell7");
+    let gameBoardCellList = [gridElement0,gridElement1,gridElement2,gridElement3,gridElement4,gridElement5,gridElement5,gridElement6,gridElement7];
+    
+
+}
+let player = 1;
+
+
+const elem = document.getElementsByClassName('tic_tac_toe_cell');
+for(let i=0;i<elem.length;i++){
+    elem[i].addEventListener('click',()=>{
+        if(player==1){
+            elem[i].innerText='X';
+            player=2;
+            console.log('X');
+            
+            
+        }
+        else if(player==2){
+            elem[i].innerText='O';
+            player=1;
+            console.log('O');
+        }
+    })
 }
 
 
@@ -19,9 +48,12 @@ const cell = (domIndex)=>{
 
 
 
- gameboard = () =>{
-    let tictaccell = [];
-}
+
+
+
+
+
+ 
 
 
 function render(){

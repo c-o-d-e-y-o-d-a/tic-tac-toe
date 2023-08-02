@@ -53,21 +53,21 @@ body{
     grid-template-rows: 1fr 1fr 1fr;
     border: 1px solid black;
     justify-items: center;
-    width: 40%;
+    width: 32%;
     justify-content: center;
     margin-top: 28vh;
     justify-content: center;
     border-radius: 6px;
-    margin-left: 33vw;
     box-shadow: black ;
+    margin: 20vh auto;
 
 }
 .tic_tac_toe_cell{
        
     border: 1px dotted black;
     width: 100%;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     font-size: 5rem;
     background-color: rgb(227, 242, 197);
     
@@ -82,20 +82,21 @@ body{
 .lowerMostText{
     position: fixed;
     top: 96dvh;
-    left: 40dvw;
+    left: 50%;
     display: inline-block;
     background-color: aliceblue;
     border-radius: 6px;
     font-family: bottom-text-font;
     opacity: 0.7;
+    transform: translate(-50%, -50%);
     
 }
 .score{
-    width: 10%;
-    margin-top: 6dvh;
+    
+    margin-top: 3dvh;
     margin-bottom: 10dvh;
     border-radius: 10px;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2dvh 3dvh 2dvh 3dvh;
     border: 5px solid black;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
