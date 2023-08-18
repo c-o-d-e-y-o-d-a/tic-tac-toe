@@ -10,6 +10,11 @@
     text-align: center;
 }
 
+#github-icon{
+    height: 3vh;
+    width:  5vh;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -60,6 +65,7 @@ body{
     border-radius: 6px;
     box-shadow: black ;
     margin: 20vh auto;
+    box-shadow: inset;
 
 }
 .tic_tac_toe_cell{
